@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a4e6583_25b44ef1",
+        "filename": "include/samsung_lights.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2017-04-15T09:13:40Z",
+      "side": 0,
+      "message": "This node is wrong, which might have caused your brightness issue. Should be:\n\n/sys/class/leds/lcd-backlight/max_brightness",
+      "revId": "eea4a868e5c5b7bbe14c5996e2c8129dce3057f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
