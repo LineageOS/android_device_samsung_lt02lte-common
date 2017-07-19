@@ -96,18 +96,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
-# GPS config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/sap.conf:system/etc/sap.conf
-
 # Shim for libc to fix camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/libshim_c.so:system/lib/libshim_c.so
 
 # GPS HAL
 PRODUCT_PACKAGES += \
-    gps.msm8960
+    gps.msm8960 \
+    gps.conf \
+    sap.conf
 
 # Lights
 PRODUCT_PACKAGES += \
